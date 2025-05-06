@@ -113,7 +113,7 @@ void task2HumanPyramid() {
 float calculateWeight(int row, int column, float weights[]) {
     // Calculate the index of cheerleader in the array
     int index = (row * (row + 1)) / 2 + column;
-
+    
     // Base case: if at the top of the pyramid, return their own weight
     if (row == 0) {
         return weights[index];
@@ -176,7 +176,7 @@ void task4QueensBattle() {
     scanf("%d", &boardSize);
     while ((getchar()) != '\n'); // clear newline
 
-    printf("Please enter the %d*%d puzzle board:\n", boardSize, boardSize);
+    printf("Please enter a %d*%d puzzle board:\n", boardSize, boardSize);
     for (int i = 0; i < boardSize; i++) {
         scanf("%s", board[i]);
     }
